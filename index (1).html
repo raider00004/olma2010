@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакт</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #1a1a1a;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+    .container {
+      max-width: 100%;
+      max-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    img {
+      max-width: 100%;
+      max-height: 95vh;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      border-radius: 8px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+    }
+    @media (max-width: 600px) {
+      img {
+        max-height: 100vh;
+        border-radius: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="photo.png" alt="Фото з контактом">
+  </div>
+</body>
+</html>
